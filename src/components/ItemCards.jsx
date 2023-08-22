@@ -13,7 +13,7 @@ export default function ItemCards(props) {
   const { imageSrc, title, price } = props;
   return (
     <div>
-      <Card>
+      <Card className="bg-blue-900">
         <CardHeader shadow={false} floated={false} className="h-58">
           <div className="h-full w-full aspect-w-4 aspect-h-3">
             <img
@@ -25,10 +25,10 @@ export default function ItemCards(props) {
         </CardHeader>
         <CardBody>
           <div className="flex items-center justify-between">
-            <Typography color="blue-gray" className="font-bold text-sm">
+            <Typography color="white" className="font-bold text-sm">
               {title}
             </Typography>
-            <Typography color="blue-gray" className="font-bold text-sm">
+            <Typography color="white" className="font-bold text-sm">
               {price}
             </Typography>
           </div>
@@ -37,7 +37,7 @@ export default function ItemCards(props) {
           <Button
             ripple={false}
             fullWidth={true}
-            className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+            className="bg-white text-black shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
           >
             Add to Cart
           </Button>

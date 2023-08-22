@@ -25,13 +25,13 @@ const products = [
   },
   {
     id: 6,
-    title: "ApeCoin Gorilla Silver Pendant",
+    title: "ApeCoin Silver Pendant",
     imageSrc: "public/Gorilla Ape.jpg",
     price: "$APE 350.00",
   },
   {
     id: 7,
-    title: "ApeCoin Gorilla Gold Pendant",
+    title: "ApeCoin Gold Pendant",
     imageSrc: "public/ApeCoin gold Pendant.jpg",
     price: "$APE 200.00",
   },
