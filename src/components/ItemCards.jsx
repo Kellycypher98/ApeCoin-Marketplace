@@ -13,16 +13,18 @@ export default function ItemCards(props) {
   const { imageSrc, title, price } = props;
   return (
     <div>
-      <Card className="w-1/4 ">
+      <Card>
         <CardHeader shadow={false} floated={false} className="h-58">
-          <img
-            src={imageSrc}
-            alt="card-image"
-            className="h-full w-full object-fill"
-          />
+          <div className="h-full w-full aspect-w-4 aspect-h-3">
+            <img
+              src={imageSrc}
+              alt="card-image"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </CardHeader>
         <CardBody>
-          <div className=" flex  items-center justify-between">
+          <div className="flex items-center justify-between">
             <Typography color="blue-gray" className="font-bold text-sm">
               {title}
             </Typography>
