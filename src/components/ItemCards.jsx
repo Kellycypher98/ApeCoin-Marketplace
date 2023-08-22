@@ -9,24 +9,25 @@ import {
 } from "@material-tailwind/react";
 import "./../index.css";
 
-export default function ItemCards() {
+export default function ItemCards(props) {
+  const { imageSrc, title, price } = props;
   return (
     <div>
       <Card className="w-1/4 ">
         <CardHeader shadow={false} floated={false} className="h-58">
           <img
-            src="src/assets/apecoin tee.jpg"
+            src={imageSrc}
             alt="card-image"
             className="h-full w-full object-fill"
           />
         </CardHeader>
         <CardBody>
-          <div className=" flex flex-col items-center justify-between">
-            <Typography color="blue-gray" className="font-medium">
-              New ApeCoin Logo T-shirt
+          <div className=" flex  items-center justify-between">
+            <Typography color="blue-gray" className="font-bold text-sm">
+              {title}
             </Typography>
-            <Typography color="blue-gray" className="font-medium">
-              $95.00
+            <Typography color="blue-gray" className="font-bold text-sm">
+              {price}
             </Typography>
           </div>
         </CardBody>

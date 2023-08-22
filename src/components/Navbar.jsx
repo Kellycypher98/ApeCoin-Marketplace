@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
+import { Navbar, Typography, Button } from "@material-tailwind/react";
 import "./../index.css";
 
 export default function NavbarDefault() {
